@@ -1,0 +1,53 @@
+# Users
+mutation {
+  createUser(
+    createUserInput: {
+      id: "123"
+      email: "user1@email.com"
+      password: "P@ssword123!"
+    }
+  ) {
+    id
+    email
+    password
+  }
+}
+
+query {
+  user(id: "123") {
+    id
+    email
+  }
+}
+
+query {
+  users {
+    id
+    email
+  }
+}
+
+# Posts
+mutation {
+  createPost(
+    createPostInput: { id: "234", body: "Some text", authorId: "123" }
+  ) {
+    id
+    body
+    authorId
+  }
+}
+
+query {
+  post(id: "234") {
+    body
+  }
+}
+
+query {
+  posts {
+    id
+    body
+    authorId
+  }
+}
