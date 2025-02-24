@@ -6,6 +6,7 @@ import {
 } from '@nestjs/apollo';
 import { PostsService } from './posts.service';
 import { PostsResolver } from './posts.resolver';
+import { UsersResolver } from './user.resolver';
 
 @Module({
   imports: [
@@ -16,6 +17,6 @@ import { PostsResolver } from './posts.resolver';
       },
     }),
   ],
-  providers: [PostsResolver, PostsService],
+  providers: [PostsResolver, PostsService, UsersResolver],
 })
 export class PostsModule {}

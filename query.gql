@@ -51,3 +51,31 @@ query {
     authorId
   }
 }
+
+# Resolved fields
+query {
+  users {
+    id
+    email
+    posts {
+      id
+      authorId
+      body
+    }
+  }
+}
+
+query {
+  posts {
+    id
+    body
+    authorId
+    user {
+      id
+      email
+      #   posts {
+      #   body
+      #   }
+    }
+  }
+}
