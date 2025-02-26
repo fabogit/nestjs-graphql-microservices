@@ -36,14 +36,19 @@ $ pnpm install
 
 ```bash
 # development
-$ pnpm run start
+$ pnpm run start APP_NAME
 
 # watch mode
-$ pnpm run start:dev
+$ pnpm run start:dev users
+$ pnpm run start:dev posts
+$ pnpm run start:dev api-gateway
+
 
 # production mode
 $ pnpm run start:prod
 ```
+
+### Open [Apollo Playground](http://localhost:3000/graphql)
 
 ## Run tests
 

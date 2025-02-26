@@ -1,3 +1,8 @@
+# Add auth header to requests
+{
+  "Authorization": "any value"
+}
+
 # Users
 mutation {
   createUser(
